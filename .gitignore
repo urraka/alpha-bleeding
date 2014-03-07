@@ -1,2 +1,3 @@
-alpha-bleeding.exe
 bin/
+*.sublime-project
+*.sublime-workspace

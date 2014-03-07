@@ -7,6 +7,10 @@ are fully transparent. It's intended to avoid filtering issues in OpenGL applica
 
 Both `<input>` and `<output>` should be PNG image files.
 
+**Building:**
+
+Just type `make` on the root directory. `libpng` and `libz` are the only required dependencies.
+
 **Example:**
 
 It's hard to see the effect of this tool, given that it only modifies the transparent pixels, so I

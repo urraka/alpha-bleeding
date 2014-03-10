@@ -86,7 +86,7 @@ void alpha_bleeding(unsigned char *image, int width, int height)
 				int s = offsets[k][0];
 				int t = offsets[k][1];
 
-				if (x + s > 0 && x + s < width && y + t > 0 && y + t < height)
+				if (x + s >= 0 && x + s < width && y + t >= 0 && y + t < height)
 				{
 					size_t index = j + 4 * (s + t * width);
 
@@ -132,7 +132,7 @@ void alpha_bleeding(unsigned char *image, int width, int height)
 				int s = offsets[k][0];
 				int t = offsets[k][1];
 
-				if (x + s > 0 && x + s < width && y + t > 0 && y + t < height)
+				if (x + s >= 0 && x + s < width && y + t >= 0 && y + t < height)
 				{
 					t *= width;
 
@@ -162,7 +162,7 @@ void alpha_bleeding(unsigned char *image, int width, int height)
 					int s = offsets[k][0];
 					int t = offsets[k][1];
 
-					if (x + s > 0 && x + s < width && y + t > 0 && y + t < height)
+					if (x + s >= 0 && x + s < width && y + t >= 0 && y + t < height)
 					{
 						size_t index = j + s + t * width;
 
